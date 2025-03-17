@@ -1,7 +1,7 @@
 [org 0x0100]
 
 jmp start
-
+;initializing all variables
 message:  db '0  0  49'         ; First row string
 message2: db '0  0  84'         ; Second row string
 message3: db '0  0  36'         ; Third row string
