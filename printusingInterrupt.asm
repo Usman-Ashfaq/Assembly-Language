@@ -3,7 +3,7 @@
 call main           
 
  
-; Clear the screen 
+; clear the screen 
 clrscr:
 mov ax,0xb800           
 mov es,ax             
@@ -11,7 +11,7 @@ mov di,0
 mov ax,0x0720          
 mov cx,2000            
 cld                    
-rep stosw              
+rep stosw                ;repeat untill cx becomes 0
 ret                   
 
  ;name on the screen 
