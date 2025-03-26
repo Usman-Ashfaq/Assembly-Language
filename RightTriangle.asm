@@ -1,5 +1,6 @@
 org 0x0100
 jmp start
+;subroutine to clear the screen
 cls:
 push ax
 push bx
@@ -31,13 +32,14 @@ sub cx,1
 jnz loop2
 pop cx
 mov ax,cx
-shl ax,1
+shl ax,1              ;multiplying by 2
 add di,160
 sub di,ax
 add cx,2
 cmp cx,15
 jle loop1
 ret
+;main function
 start:
 call cls
 call print
