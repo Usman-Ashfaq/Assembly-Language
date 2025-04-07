@@ -1,5 +1,6 @@
 org 0x0100
 jmp start
+;subroutne to clear the screen
 cls:
 push ax
 push bx
@@ -16,6 +17,7 @@ pop di
 pop bx
 pop ax
 ret
+;subroutine to print the diamond
 print:
 mov ax,0
 mov cx,1
@@ -39,7 +41,7 @@ jnz loop2
 pop cx
 mov ax,cx
 shl ax,1
-add di,160
+add di,160             ;for next line
 sub di,ax
 add cx,2
 mov ax,cx
