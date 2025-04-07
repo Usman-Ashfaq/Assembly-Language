@@ -14,7 +14,7 @@ border:
 			mov es, ax			
 
 			mov ax, 0x1720     ; Character and attribute for the diagonal line
-			
+;subroutine for diagonal			
 diagonal:	
                         mov di, word[bp-2]
 			mov [es:di], ax    ; Write the diagonal character
