@@ -10,7 +10,7 @@ mov ax,0x0720
 cld
 rep stosw
 ret
-;;;;
+;;;;lower lwtter to upper
 convert_to_upper:
  mov bx,0
 convert:
